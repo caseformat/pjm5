@@ -81,7 +81,7 @@ jobs:
         with:
           name: case-dcopf
           path: pjm5-dcopf.case
-  acpf:
+  acopf:
     name: Archive ACPF
     runs-on: ubuntu-latest
     env:
