@@ -23,7 +23,7 @@ jobs:
       - name: Archive
         run: tar -cvf pjm5.case *.csv README LICENSE
       - name: Upload archive
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: case
           path: pjm5.case
@@ -41,7 +41,7 @@ jobs:
       - name: Archive
         run: tar -cvf pjm5-dcpf.case *.csv README LICENSE
       - name: Upload archive
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: case-dcpf
           path: pjm5-dcpf.case
@@ -59,7 +59,7 @@ jobs:
       - name: Archive
         run: tar -cvf pjm5-acpf.case *.csv README LICENSE
       - name: Upload archive
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: case-acpf
           path: pjm5-acpf.case
@@ -77,12 +77,12 @@ jobs:
       - name: Archive
         run: tar -cvf pjm5-dcopf.case *.csv README LICENSE
       - name: Upload archive
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: case-dcopf
           path: pjm5-dcopf.case
   acopf:
-    name: Archive ACPF
+    name: Archive ACOPF
     runs-on: ubuntu-latest
     env:
       REPO_NAME: ${{ github.event.repository.name }}
@@ -95,7 +95,7 @@ jobs:
       - name: Archive
         run: tar -cvf pjm5-acpf.case *.csv README LICENSE
       - name: Upload archive
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: case-acopf
           path: pjm5-acopf.case
