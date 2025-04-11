@@ -90,10 +90,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: acpf
+          ref: acopf
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Archive
-        run: tar -cvf pjm5-acpf.case *.csv README LICENSE
+        run: tar -cvf pjm5-acopf.case *.csv README LICENSE
       - name: Upload archive
         uses: actions/upload-artifact@v4
         with:
